@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>BMI CALCULATOR</h1>
+      <div class="tabs">
+        <div class="tab active Stan">
+          Standard
+        </div>
+        <div class="tab Met">Metric</div>
+      </div>
+      <div class="main-Stnn" id="myForm">
+        <div class="cal-main">
+          <div class="height">
+            <p>Height</p>
+            <input type="number" id="inputAStandard" placeholder="feet">
+            <input type="number" id="inputBStandard" placeholder="inches">
+          </div>
+          <div class="weight">
+            <p>Weight</p>
+            <input type="number" id="Pounds" placeholder="Weight in ponds">
+          </div>
+          <input type="text" id="output1" placeholder="output show here">
+        </div>
+        <button class="btn" id="calculateButton1">Calculate Your BMI</button>
+        <button class="btn btn2" id="clearScreen1">Reset</button>
+
+      </div>
+      <div class="main-Met">
+        <div class="Met-main cal-main">
+          <div class="height">
+            <p>Height</p>
+            <input type="number" id="input2" placeholder="Height in Centimeters">
+          </div>
+          <div class="weight">
+            <p>Weight</p>
+            <input type="number" id="input1" placeholder="Weight in Kilograms">
+          </div>
+          <input type="text" id="output" placeholder="output show here">
+        </div>
+        <button class="btn" id="calculateButton">Calculate Your BMI</button>
+        <button class="btn btn2" id="clearScreen">Reset</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

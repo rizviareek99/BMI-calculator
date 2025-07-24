@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-color: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff4d;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: #e3f2fd;
+  color: #0077b6;
+  transition: 0.3s ease;
+}
+
+.tab.active {
+  background-color: #0077b6;
+  color: white;
+  border-color: #0077b6;
+  transform: scale(1.05);
+}
+
+.tab:hover:not(.active) {
+  background-color: #caf0f8;
+}
+
+.main-Stnn,
+.main-Met {
+  display: none;
+}
+
+.main-Stnn.active,
+.main-Met.active {
+  display: block;
+}
+
+.cal-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.height,
+.weight {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.height p,
+.weight p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #f1faff;
+  transition: 0.2s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 5px #0077b6aa;
+}
+
+input[type="text"] {
+  background-color: #e9f5ff;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: white;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background: linear-gradient(to right, #00b4d8, #0077b6);
+}
+
+.btn2 {
+  background: linear-gradient(to right, #ef233c, #d90429);
+  margin-top: 10px;
+}
+
+.btn2:hover {
+  background: linear-gradient(to right, #d90429, #ef233c);
+}
